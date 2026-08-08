@@ -146,8 +146,8 @@
             margin-bottom: 12px;
             font-size: 14px;
             color: var(--light-text);
-        }
-
+        }		
+		
         /* Skill Tag Pill Design */
         .pill-box {
             display: flex;
@@ -167,6 +167,11 @@
             font-weight: 500;
             border: 1px solid #bfdbfe;
             margin: 0;
+			 /* New additions for long text */
+    white-space: nowrap;      /* keep text on one line */
+    overflow: hidden;         /* hide overflow */
+    text-overflow: ellipsis;  /* add "..." if too long */
+    max-width: 220px;         /* limit width so it doesn’t stretch */
         }
 
         /* Timeline entries for jobs */
